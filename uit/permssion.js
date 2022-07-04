@@ -6,7 +6,7 @@ module.exports = (request,response,next)=>{
     // next()
     // console.log(req);
     let token = request.headers.authorization
-    console.log(token);
+    // console.log(token);
     if(!token){
         response.json({
             code:'50000',

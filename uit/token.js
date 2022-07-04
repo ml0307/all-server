@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken')
 const fs = require('fs')
 const {resolve}=require('path')
-const e = require('express')
+const express = require('express')
 let public_key = fs.readFileSync(resolve('uit','public_key.pem'))
 let private_key =fs.readFileSync(resolve('uit','private_key.pem'))
 // console.log(public_key);
